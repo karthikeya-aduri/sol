@@ -70,7 +70,7 @@ void deleteEdge(E *temp){
 
 void solve(int **graph, int n){
     int *check;
-    int i,j,edge=0;
+    int i,j;
     check = (int*)malloc(n*sizeof(int));
     for(i=0;i<n;i++){check[i]=1;}
     E *temp = f;
@@ -80,16 +80,13 @@ void solve(int **graph, int n){
         if(check[i]==1&&check[j]==1){
             check[i]=0;
             check[j]=0;
-            edge++;
         }  
         else if(check[i]==0&&check[j]==1){
                 check[j]=0;
-                edge++;
         }
 
         else if(check[i]==1&&check[j]==0){
                 check[i]=0;
-                edge++;
         }    
         else{
             deleteEdge(temp);
