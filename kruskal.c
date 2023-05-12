@@ -68,7 +68,7 @@ void deleteEdge(E *temp){
     free(temp);
 }
 
-void solve(int **graph, int n){
+void meth(int **graph, int n){
     int *check;
     int i,j;
     check = (int*)malloc(n*sizeof(int));
@@ -121,7 +121,7 @@ int main(){
         }
     }
     sortEdge(e);
-    solve(graph,n);
+    meth(graph,n);
     printf("\nMST of given graph:\n");
     printEdge();
     return 0;
