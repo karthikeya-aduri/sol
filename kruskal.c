@@ -18,10 +18,19 @@ void printEdge(){
 }
 
 void swap(E *t1, E *t2){
-    int a,b,c;   
-    a = t1->so; b = t1->de; c = t1->w;
-    t1->so = t2->so;    t1->de = t2->de;   t1->w  = t2->w; 
-    t2->so = a; t2->de = b; t2->w  = c;
+    int a,b,c;
+	
+    	a = t1->so; 
+	b = t1->de; 
+	c = t1->w;
+    	
+	t1->so = t2->so;
+	t1->de = t2->de;   
+	t1->w  = t2->w; 
+    	
+	t2->so = a; 
+	t2->de = b; 
+	t2->w  = c;
 }
 
 void sortEdge(int e){
