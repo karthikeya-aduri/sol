@@ -20,7 +20,7 @@ void printEdge(){
 void swap(E *t1, E *t2){
     int a,b,c;
 	
-    	a = t1->so; 
+    a = t1->so; 
 	b = t1->de; 
 	c = t1->w;
     	
